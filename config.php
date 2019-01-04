@@ -6,7 +6,7 @@
 
 <?php
 
-$host = "yt3.herokuapp.com";
+$host = "localhost";
 
 $username = "admin_vfbn";
 
