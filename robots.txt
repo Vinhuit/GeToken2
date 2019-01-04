@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /panel/
+Disallow: /like_modun/
+Disallow: /like_hethong/
+Disallow: /like_cron/
+Disallow: /AdminCP/
