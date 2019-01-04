@@ -6,7 +6,7 @@
 
 <?php
 
-$host = "localhost";
+$host = "yt3.herokuapp.com";
 
 $username = "admin_vfbn";
 
@@ -28,13 +28,13 @@ mysql_select_db($dbname) or die(mysql_error());
 
 mysql_query("SET NAMES utf8");
 
-$hometom = "VIPFBNOW.COM";
+$hometom = "yt3.herokuapp.com";
 
 $title = "HỆ THỐNG VIP LIKE | VIP COMMENT | BOT COMMENT | BOT CẢM XÚC - VIPFBNOW.COM";
 
-$logo = "VIPFBNOW.COM";
+$logo = "yt3.herokuapp.com";
 
-$logo2 = "VIPFBNOW.COM";
+$logo2 = "yt3.herokuapp.com";
 
 $phienban = "VIP LIKE 2017";
 
@@ -44,7 +44,7 @@ $adminname = "Đỗ Duy Thịnh";
 
 $idfb = "100006670751625";
 
-$home = 'http://vipfbnow.com';
+$home = 'yt3.herokuapp.com';
 
 $avtmacdinh = "https://i.imgur.com/3xMwdBO.png";
 
