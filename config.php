@@ -1,16 +1,26 @@
 <?php
-
-  $db = new PDO('mysql:host=localhost;dbname=admin_vfbn','admin_vfbn','Admin123');
-
+$dbopts = parse_url(getenv('DATABASE_URL'));
+$db->register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider('pdo'),
+               array(
+                'pdo.server' => array(
+                   'driver'   => 'pgsql',
+                   'user' => $dbopts["user"],
+                   'password' => $dbopts["pass"],
+                   'host' => $dbopts["host"],
+                   'port' => $dbopts["port"],
+                   'dbname' => ltrim($dbopts["path"],'/')
+                   )
+               )
+);
 ?>
 
 <?php
 
 $host = "localhost";
 
-$username = "admin_vfbn";
+$username = "user";
 
-$password = "Admin123";	
+$password = "pass";	
 
 $dbname = "admin_vfbn";
 
